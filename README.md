@@ -1,6 +1,6 @@
-# 🕸️ Claude Skill Mesh
+# Claude Skill Mesh
 
-> **A self-authoring AI agent mesh for Claude** — detects your connected MCPs, spawns intelligent agents that observe patterns, and evolves through natural selection. Zero config. Works with ANY MCP stack.
+> A self-authoring AI agent mesh for Claude — detects your connected MCPs, spawns intelligent agents that observe patterns, and evolves through natural selection. Zero config. Works with ANY MCP stack.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet)](https://claude.ai)
@@ -8,21 +8,21 @@
 
 ---
 
-## ✨ What Is This?
+## What Is This?
 
 **Claude Skill Mesh** is a single-file Claude skill (`SKILL.md`) that turns Claude into a living, self-organizing agent network. Point it at your tools and it:
 
-1. 🔍 **Discovers** all your connected MCP servers (Slack, GitHub, HubSpot, Notion, Linear, etc.)
-2. 🧠 **Asks** what you care about — then builds a custom observation strategy
-3. 👁️ **Observes** your systems for recurring patterns, bottlenecks, and manual work
-4. 🏗️ **Spawns** specialized agents for every pattern worth automating
-5. ✂️ **Prunes** dead agents, promotes winners, keeps itself lean
+1. Discovers all your connected MCP servers (Slack, GitHub, HubSpot, Notion, Linear, etc.)
+2. Asks what you care about — then builds a custom observation strategy
+3. Observes your systems for recurring patterns, bottlenecks, and manual work
+4. Spawns specialized agents for every pattern worth automating
+5. Prunes dead agents, promotes winners, keeps itself lean
 
 All agents are plain Markdown files you can read, edit, or delete.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Copy `SKILL.md` into your Claude project or paste it as a system prompt
 2. Make sure you have at least one MCP connected (any will work)
@@ -32,7 +32,7 @@ That's it. Claude will do the rest.
 
 ---
 
-## 🗣️ Commands
+## Commands
 
 | Say this | What happens |
 |---|---|
@@ -42,46 +42,46 @@ That's it. Claude will do the rest.
 | `run [agent-name]` | Execute a specific agent |
 | `prune` | Pruner evaluates and culls underperforming agents |
 | `mesh status` | Quick health check of the mesh |
-| `mesh cycle` | Full cycle: observe → architect → execute all |
+| `mesh cycle` | Full cycle: observe -> architect -> execute all |
 
 ---
 
-## 🧩 How It Works
+## How It Works
 
 ```
 Bootstrap
-  └── Discover MCPs → Ask priorities → Build scan strategy → First observation
+  └── Discover MCPs -> Ask priorities -> Build scan strategy -> First observation
 
 Observer (scheduled)
-  └── Surgical MCP queries → Pattern detection → Rolling 3-file window
+  └── Surgical MCP queries -> Pattern detection -> Rolling 3-file window
 
 Architect (after observation)
-  └── Score patterns (max 24) → Spawn agents if score ≥ 14 → Update registry
+  └── Score patterns (max 24) -> Spawn agents if score >= 14 -> Update registry
 
 Execute
-  └── Run agent steps → Write log → Promote candidate → active
+  └── Run agent steps -> Write log -> Promote candidate -> active
 
 Pruner (weekly)
-  └── Read registry + logs → Promote | Kill | Merge → Report
+  └── Read registry + logs -> Promote | Kill | Merge -> Report
 ```
 
 ---
 
-## 📁 Vault Structure
+## Vault Structure
 
 ```
 System/
-  registry.md       ← Agent index (the only file read every run)
-  mesh.md           ← Your MCP config + scan strategy
-  digest.md         ← Compressed pattern history
-  Agents/           ← Human-readable agent specs
-  Observations/     ← Rolling window (max 3 files)
-  Logs/             ← One file per agent, overwritten each run
+  registry.md       -- Agent index (the only file read every run)
+  mesh.md           -- Your MCP config + scan strategy
+  digest.md         -- Compressed pattern history
+  Agents/           -- Human-readable agent specs
+  Observations/     -- Rolling window (max 3 files)
+  Logs/             -- One file per agent, overwritten each run
 ```
 
 ---
 
-## ⚡ Token Efficiency
+## Token Efficiency
 
 Mesh is engineered to stay fast and cheap:
 
@@ -93,7 +93,7 @@ Mesh is engineered to stay fast and cheap:
 
 ---
 
-## 🔧 MCP Compatibility
+## MCP Compatibility
 
 Works out of the box with any MCP server:
 
@@ -105,12 +105,12 @@ Works out of the box with any MCP server:
 
 ---
 
-## 🧬 Agent Lifecycle
+## Agent Lifecycle
 
 ```
-candidate → active → essential
-                ↓
-            graveyard
+candidate -> active -> essential
+               |
+           graveyard
 ```
 
 - **Candidate** — newly spawned, on probation
@@ -120,7 +120,7 @@ candidate → active → essential
 
 ---
 
-## 📄 References
+## References
 
 The `references/` folder contains templates used during bootstrap:
 
@@ -134,7 +134,7 @@ The `references/` folder contains templates used during bootstrap:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 PRs welcome! Ideas for improvement:
 
@@ -145,10 +145,10 @@ PRs welcome! Ideas for improvement:
 
 ---
 
-## 📜 License
+## License
 
 MIT — use freely, attribution appreciated.
 
 ---
 
-<p align="center">Built for the agentic era 🤖 · Works with Claude · Powered by MCP</p>
+<p align="center">Built for the agentic era · Works with Claude · Powered by MCP</p>
